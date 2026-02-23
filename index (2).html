@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Children's Safety Village Belleville — Hands-on safety education for children aged 4–12. Book a program, donate to our Capital Campaign, or volunteer today."/>
+<title>Children's Safety Village Belleville | Safety Education That Saves Lives</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+<style>
+/* BRAND PALETTE — from CSV logo: Yellow #F5C518 | Blue #3A86C8 | Green #5BAD4E | Purple #6B3FA0 */
+:root{
+  --y:#F5C518;--yd:#D4A800;--yl:#FFF8D6;
+  --b:#3A86C8;--bd:#2A6BA8;--bl:#E8F2FB;
+  --g:#5BAD4E;--gd:#449038;--gl:#E8F5E8;
+  --p:#6B3FA0;--pd:#552F80;--pl:#F0E8FF;
+  --w:#FFFFFF;--off:#F8F9FC;--gl2:#E8ECF2;
+  --gm:#6B7490;--gd2:#2D3352;--blk:#1A1D2E;
+  --fh:'Playfair Display',Georgia,serif;
+  --fb:'Nunito','Segoe UI',sans-serif;
+  --r:14px;--rl:22px;--rx:32px;
+  --sh:0 4px 20px rgba(58,134,200,.10);
+  --shl:0 12px 44px rgba(58,134,200,.16);
+  --t:.22s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--fb);color:var(--gd2);background:var(--w);line-height:1.65;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{color:var(--b);text-decoration:underline;text-underline-offset:3px;transition:color var(--t);}
+a:hover{color:var(--bd);}
+a:focus-visible{outline:3px solid var(--y);outline-offset:3px;border-radius:4px;}
+.skip-link{position:absolute;top:-999px;left:1rem;background:var(--p);color:#fff;padding:.75rem 1.5rem;border-radius:var(--r);font-weight:700;z-index:9999;text-decoration:none;}
+.skip-link:focus{top:1rem;}
+.container{max-width:1160px;margin:0 auto;padding:0 1.5rem;}
+.section{padding:5rem 0;}.section-sm{padding:3rem 0;}
+.tc{text-align:center;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+h1,h2,h3{font-family:var(--fh);color:var(--blk);line-height:1.2;}
+h1{font-size:clamp(2.1rem,5vw,3.5rem);font-weight:900;}
+h2{font-size:clamp(1.7rem,3.5vw,2.5rem);font-weight:700;}
+h3{font-size:1.3rem;font-weight:700;}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--p);font-family:var(--fb);margin-bottom:.6rem;}
+.lead{font-size:1.1rem;color:var(--gm);line-height:1.78;max-width:640px;}
+.cbar{display:flex;height:5px;border-radius:50px;overflow:hidden;margin:1rem 0 1.5rem;width:80px;}
+.cbar span{flex:1;}.cbar.cx{margin-left:auto;margin-right:auto;}
+.cy{background:var(--y);}.cg{background:var(--g);}.cb{background:var(--b);}.cp{background:var(--p);}
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:52px;padding:.85rem 2rem;font-family:var(--fb);font-size:1rem;font-weight:800;border:2.5px solid transparent;border-radius:50px;cursor:pointer;text-decoration:none;transition:all var(--t);white-space:nowrap;}
+.btn:focus-visible{outline:3px solid var(--y);outline-offset:3px;}
+.btn-y{background:var(--y);color:var(--blk);border-color:var(--y);}
+.btn-y:hover{background:var(--yd);border-color:var(--yd);color:var(--blk);transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,197,24,.4);}
+.btn-b{background:var(--b);color:#fff;border-color:var(--b);}
+.btn-b:hover{background:var(--bd);color:#fff;transform:translateY(-2px);}
+.btn-g{background:var(--g);color:#fff;border-color:var(--g);}
+.btn-g:hover{background:var(--gd);color:#fff;transform:translateY(-2px);}
+.btn-p{background:var(--p);color:#fff;border-color:var(--p);}
+.btn-p:hover{background:var(--pd);color:#fff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(107,63,160,.35);}
+.btn-ow{background:transparent;color:#fff;border-color:rgba(255,255,255,.7);}
+.btn-ow:hover{background:rgba(255,255,255,.15);border-color:#fff;color:#fff;}
+.btn-lg{min-height:60px;padding:1rem 2.5rem;font-size:1.08rem;}
+.btn-fw{width:100%;}
+/* NAV */
+#site-header{position:sticky;top:0;z-index:1000;background:var(--w);box-shadow:0 2px 16px rgba(58,134,200,.12);border-bottom:4px solid var(--y);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:76px;gap:1rem;}
+.nav-logo{display:flex;align-items:center;gap:.9rem;text-decoration:none;flex-shrink:0;}
+.nav-logo-svg{width:54px;height:54px;flex-shrink:0;}
+.nav-logo-name{font-family:var(--fh);font-size:1.05rem;font-weight:900;color:var(--blk);display:block;}
+.nav-logo-sub{font-size:.7rem;font-weight:600;color:var(--gm);display:block;letter-spacing:.04em;}
+.nav-links{display:flex;align-items:center;gap:.15rem;list-style:none;}
+.nav-links a{display:flex;align-items:center;min-height:48px;padding:0 .85rem;color:var(--gd2);text-decoration:none;font-size:.9rem;font-weight:700;border-radius:10px;transition:all var(--t);}
+.nav-links a:hover,.nav-links a.active{color:var(--p);background:var(--pl);}
+.nav-hbg{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:48px;height:48px;background:transparent;border:2px solid var(--gl2);border-radius:10px;cursor:pointer;flex-shrink:0;}
+.nav-hbg span{display:block;width:22px;height:2.5px;background:var(--gd2);border-radius:2px;transition:all var(--t);}
+.nav-hbg[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-hbg[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.nav-hbg[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+#mob-menu{display:none;background:var(--w);border-top:2px solid var(--gl2);padding:1rem 1.5rem 1.5rem;}
+#mob-menu.open{display:block;}
+#mob-menu ul{list-style:none;}
+#mob-menu li a{display:flex;align-items:center;min-height:52px;color:var(--gd2);font-weight:700;font-size:1.02rem;text-decoration:none;border-bottom:1px solid var(--gl2);padding:0 .25rem;}
+.mob-ctas{display:flex;flex-direction:column;gap:.75rem;margin-top:1.25rem;}
+.ribbon{background:var(--p);padding:.5rem 0;}
+.ribbon-i{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;}
+.ribbon-item{font-size:.78rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:.4rem;}
+.page{display:none;}.page.active{display:block;}
+/* HERO */
+.hero{background:linear-gradient(135deg,#1A1D2E 0%,#2D3352 55%,#1E3A5F 100%);position:relative;overflow:hidden;padding:5.5rem 0 7rem;}
+.hero::before{content:'';position:absolute;top:-120px;right:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(245,197,24,.18) 0%,transparent 70%);pointer-events:none;}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:80px;background:var(--w);clip-path:ellipse(55% 100% at 50% 100%);}
+.hero-blb{position:absolute;bottom:60px;left:-100px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(58,134,200,.15) 0%,transparent 70%);pointer-events:none;}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(245,197,24,.18);border:1px solid rgba(245,197,24,.4);color:var(--y);font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.4rem 1rem;border-radius:50px;margin-bottom:1.25rem;}
+.hero h1{color:#fff;margin-bottom:1.2rem;} .hero h1 em{font-style:normal;color:var(--y);}
+.hero-lead{font-size:1.12rem;color:rgba(255,255,255,.78);line-height:1.78;margin-bottom:2rem;max-width:520px;}
+.hero-acts{display:flex;gap:1rem;flex-wrap:wrap;}
+.hero-card{background:rgba(255,255,255,.07);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.14);border-radius:var(--rx);padding:2rem;}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.hero-stat{border-radius:var(--r);padding:1.2rem;text-align:center;}
+.hs1{background:rgba(245,197,24,.15);}.hs2{background:rgba(58,134,200,.15);}
+.hs3{background:rgba(91,173,78,.15);}.hs4{background:rgba(107,63,160,.15);}
+.hs-num{font-family:var(--fh);font-size:2rem;font-weight:900;color:#fff;line-height:1;}
+.hs-num.y{color:var(--y);}.hs-num.b{color:#7EC8F5;}.hs-num.g{color:#8FE07F;}.hs-num.p{color:#C49DFF;}
+.hs-lab{font-size:.76rem;color:rgba(255,255,255,.65);margin-top:.3rem;font-weight:600;}
+.hero-cta-card{margin-top:1.25rem;background:var(--y);color:var(--blk);border-radius:var(--r);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;font-weight:800;font-size:.92rem;cursor:pointer;border:none;width:100%;text-decoration:none;transition:all var(--t);}
+.hero-cta-card:hover{background:var(--yd);color:var(--blk);transform:translateY(-2px);}
+/* CAMPAIGN */
+.campaign{background:var(--b);padding:3.5rem 0;position:relative;overflow:hidden;}
+.campaign::before{content:'';position:absolute;top:-60%;right:-5%;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,.05);pointer-events:none;}
+.camp-inner{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;}
+.camp-text h2{color:#fff;margin-bottom:.75rem;}.camp-text p{color:rgba(255,255,255,.82);line-height:1.75;}
+.camp-acts{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem;}
+.therm-labs{display:flex;justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:.5rem;font-weight:700;}
+.therm-goal{color:var(--y);}
+.therm-track{background:rgba(255,255,255,.2);border-radius:50px;height:24px;overflow:hidden;}
+.therm-fill{background:linear-gradient(90deg,var(--y) 0%,#FFD84D 100%);height:100%;border-radius:50px;width:0%;transition:width 1.8s cubic-bezier(.22,1,.36,1);position:relative;}
+.therm-fill::after{content:'';position:absolute;top:4px;right:4px;bottom:4px;width:35%;background:rgba(255,255,255,.22);border-radius:50px;}
+.therm-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;}
+.therm-stat{background:rgba(255,255,255,.1);border-radius:var(--r);padding:1rem;text-align:center;}
+.therm-num{font-family:var(--fh);font-size:1.5rem;font-weight:900;color:var(--y);}
+.therm-lab{font-size:.73rem;color:rgba(255,255,255,.7);margin-top:.2rem;font-weight:600;}
+/* PROGRAM CARDS */
+.prog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:1.5rem;margin-top:3rem;}
+.prog-card{background:var(--w);border:2px solid var(--gl2);border-radius:var(--rl);overflow:hidden;transition:all var(--t);display:flex;flex-direction:column;box-shadow:var(--sh);}
+.prog-card:hover{transform:translateY(-5px);box-shadow:var(--shl);}
+.pc-y:hover{border-color:var(--y);}.pc-b:hover{border-color:var(--b);}.pc-g:hover{border-color:var(--g);}.pc-p:hover{border-color:var(--p);}
+.pc-bar{height:5px;}
+.pc-y .pc-bar{background:var(--y);}.pc-b .pc-bar{background:var(--b);}.pc-g .pc-bar{background:var(--g);}.pc-p .pc-bar{background:var(--p);}
+.pc-img{height:155px;display:flex;align-items:center;justify-content:center;font-size:4rem;}
+.pc-y .pc-img{background:var(--yl);}.pc-b .pc-img{background:var(--bl);}.pc-g .pc-img{background:var(--gl);}.pc-p .pc-img{background:var(--pl);}
+.pc-body{padding:1.5rem;flex:1;display:flex;flex-direction:column;}
+.pc-badge{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .7rem;border-radius:50px;margin-bottom:.75rem;}
+.pc-y .pc-badge{background:var(--yl);color:#8A6E00;}.pc-b .pc-badge{background:var(--bl);color:var(--bd);}
+.pc-g .pc-badge{background:var(--gl);color:var(--gd);}.pc-p .pc-badge{background:var(--pl);color:var(--pd);}
+.pc-body h3{margin-bottom:.5rem;}
+.pc-body p{font-size:.92rem;color:var(--gm);line-height:1.65;flex:1;margin-bottom:1.2rem;}
+.pc-meta{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.2rem;}
+.pc-meta span{font-size:.76rem;font-weight:700;color:var(--gd2);background:var(--off);padding:.25rem .6rem;border-radius:6px;}
+.meta-free{color:var(--gd)!important;background:var(--gl)!important;}
+/* TESTIMONIALS */
+.testi-bg{background:var(--off);}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
+.testi-card{background:var(--w);border-radius:var(--rl);padding:2rem;box-shadow:var(--sh);position:relative;border-top:4px solid var(--y);}
+.t2{border-top-color:var(--b);}.t3{border-top-color:var(--g);}
+.testi-card::before{content:'\201C';font-family:var(--fh);font-size:5rem;opacity:.18;position:absolute;top:.3rem;left:1.25rem;line-height:1;}
+.t1::before{color:var(--y);}.t2::before{color:var(--b);}.t3::before{color:var(--g);}
+.testi-photo{width:48px;height:48px;border-radius:50%;object-fit:cover;margin-bottom:1rem;border:3px solid var(--y);}
+.t2 .testi-photo{border-color:var(--b);}.t3 .testi-photo{border-color:var(--g);}
+.testi-text{font-size:.93rem;line-height:1.75;color:var(--gd2);margin-bottom:1.25rem;position:relative;z-index:1;}
+.testi-author{font-weight:800;font-size:.88rem;color:var(--blk);}
+.testi-role{font-size:.78rem;color:var(--gm);}
+/* AWARDS */
+.awards-row{display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;margin-top:2.5rem;}
+.award{text-align:center;max-width:155px;}
+.award-ico{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto .75rem;}
+.ai-y{background:var(--yl);box-shadow:0 4px 16px rgba(245,197,24,.3);}
+.ai-b{background:var(--bl);box-shadow:0 4px 16px rgba(58,134,200,.25);}
+.ai-g{background:var(--gl);box-shadow:0 4px 16px rgba(91,173,78,.25);}
+.ai-p{background:var(--pl);box-shadow:0 4px 16px rgba(107,63,160,.25);}
+.award-ttl{font-weight:800;font-size:.88rem;color:var(--blk);}
+.award-org{font-size:.75rem;color:var(--gm);margin-top:.2rem;}
+/* PROGRAMS PAGE */
+.prog-hero{background:linear-gradient(135deg,var(--bd) 0%,var(--b) 100%);padding:3.5rem 0;}
+.breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:1.25rem;flex-wrap:wrap;}
+.breadcrumb a{color:rgba(255,255,255,.65);font-size:.85rem;text-decoration:none;font-weight:600;}
+.breadcrumb a:hover{color:#fff;}
+.breadcrumb span{color:rgba(255,255,255,.4);font-size:.85rem;}
+.breadcrumb strong{color:#fff;font-size:.85rem;}
+.prog-hero h1{color:#fff;font-size:clamp(1.8rem,4vw,2.7rem);}
+.prog-hero .lead{color:rgba(255,255,255,.82);margin-top:.75rem;max-width:580px;}
+.prog-body{padding:4rem 0;}
+.prog-pg{display:grid;grid-template-columns:1fr 390px;gap:3rem;align-items:start;}
+.detail-sec{margin-bottom:2.5rem;}
+.detail-sec h2{font-size:1.45rem;margin-bottom:.6rem;}
+.detail-sec p{color:var(--gd2);line-height:1.78;margin-bottom:.75rem;font-size:.97rem;}
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;}
+.feat-item{display:flex;align-items:flex-start;gap:.75rem;padding:1.1rem;background:var(--off);border-radius:var(--r);}
+.feat-item:nth-child(1){border-left:4px solid var(--y);}.feat-item:nth-child(2){border-left:4px solid var(--b);}
+.feat-item:nth-child(3){border-left:4px solid var(--g);}.feat-item:nth-child(4){border-left:4px solid var(--p);}
+.feat-ico{font-size:1.5rem;flex-shrink:0;margin-top:.1rem;}
+.feat-item h4{margin-bottom:.2rem;font-size:.9rem;color:var(--blk);font-family:var(--fb);}
+.feat-item p{font-size:.82rem;color:var(--gm);margin:0;}
+.out-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.5rem;}
+.out-list li{display:flex;align-items:center;gap:.6rem;font-size:.92rem;padding:.5rem .75rem;background:var(--gl);border-radius:8px;color:var(--gd);font-weight:700;}
+.book-card{background:var(--w);border:2px solid var(--gl2);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shl);position:sticky;top:90px;}
+.book-head{background:var(--p);padding:1.5rem;}
+.book-head h3{color:#fff;font-size:1.15rem;margin-bottom:.2rem;}
+.book-head p{color:rgba(255,255,255,.75);font-size:.86rem;}
+.book-body{padding:1.5rem;}
+.price-disp{display:flex;align-items:baseline;gap:.35rem;margin-bottom:1.25rem;}
+.price-amt{font-family:var(--fh);font-size:2.4rem;font-weight:900;color:var(--gd);}
+.price-unit{font-size:.9rem;color:var(--gm);}
+.fld{margin-bottom:1rem;}
+.flabel{display:block;font-size:.84rem;font-weight:800;color:var(--blk);margin-bottom:.4rem;}
+.finput,.fselect{width:100%;min-height:48px;padding:.72rem 1rem;font-family:var(--fb);font-size:.95rem;color:var(--gd2);background:var(--w);border:2px solid var(--gl2);border-radius:var(--r);transition:border-color var(--t);appearance:none;}
+.finput:focus,.fselect:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 3px rgba(107,63,160,.15);}
+.fhint{font-size:.76rem;color:var(--gm);margin-top:.25rem;display:block;}
+.tbadges{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--gl2);}
+.tbadge{font-size:.73rem;font-weight:700;padding:.28rem .7rem;border-radius:50px;display:flex;align-items:center;gap:.3rem;}
+.tb-g{color:var(--gd);background:var(--gl);}.tb-b{color:var(--bd);background:var(--bl);}.tb-p{color:var(--pd);background:var(--pl);}
+/* DONATE PAGE */
+.donate-pg{padding:4rem 0;}
+.donate-grid{display:grid;grid-template-columns:1fr 420px;gap:3rem;align-items:start;}
+.impact-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin:1.75rem 0;}
+.impact-card{border-radius:var(--r);padding:1.25rem;text-align:center;border:2.5px solid var(--gl2);transition:all var(--t);cursor:pointer;background:var(--w);}
+.impact-card:nth-child(1){border-top:4px solid var(--y);}.impact-card:nth-child(2){border-top:4px solid var(--b);}
+.impact-card:nth-child(3){border-top:4px solid var(--g);}.impact-card:nth-child(4){border-top:4px solid var(--p);}
+.impact-card.sel{border-color:var(--p);box-shadow:0 0 0 3px rgba(107,63,160,.2);}
+.impact-card:hover{transform:translateY(-3px);box-shadow:var(--sh);}
+.ic-amt{font-family:var(--fh);font-size:1.8rem;font-weight:900;color:var(--blk);}
+.ic-desc{font-size:.78rem;color:var(--gm);margin-top:.35rem;line-height:1.45;}
+.donate-card{background:var(--w);border:2px solid var(--gl2);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shl);position:sticky;top:90px;}
+.donate-head{background:var(--p);padding:1.5rem;}
+.donate-head h2{color:#fff;font-size:1.25rem;margin-bottom:.2rem;}
+.donate-head p{color:rgba(255,255,255,.8);font-size:.86rem;}
+.donate-body{padding:1.5rem;}
+.amt-sel{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:1rem;}
+.amt-btn{padding:.6rem;border:2px solid var(--gl2);border-radius:10px;background:var(--w);font-family:var(--fb);font-size:.95rem;font-weight:800;color:var(--gd2);cursor:pointer;transition:all var(--t);min-height:48px;}
+.amt-btn:hover{border-color:var(--p);color:var(--p);}
+.amt-btn.sel{border-color:var(--p);background:var(--pl);color:var(--p);}
+.camt-wrap{display:flex;align-items:center;border:2px solid var(--gl2);border-radius:var(--r);overflow:hidden;margin-bottom:1rem;transition:border-color var(--t);}
+.camt-wrap:focus-within{border-color:var(--p);}
+.camt-pfx{padding:0 .75rem;font-weight:800;color:var(--gm);background:var(--off);min-height:48px;display:flex;align-items:center;border-right:2px solid var(--gl2);}
+.camt-inp{flex:1;min-height:48px;padding:0 1rem;border:none;outline:none;font-family:var(--fb);font-size:1rem;font-weight:700;color:var(--blk);}
+.secure-note{text-align:center;font-size:.77rem;color:var(--gm);margin-top:1rem;display:flex;align-items:center;justify-content:center;gap:.4rem;}
+.charity-box{background:var(--pl);border-radius:var(--r);padding:1rem;margin-top:1rem;font-size:.8rem;color:var(--pd);text-align:center;line-height:1.55;}
+.charity-box strong{display:block;font-weight:800;color:var(--p);}
+.don-success{display:none;text-align:center;padding:2.5rem 1.5rem;}
+.don-success.show{display:block;}
+.don-succ-ico{width:80px;height:80px;background:var(--gl);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin:0 auto 1.25rem;}
+.don-success h3{color:var(--gd);margin-bottom:.75rem;}
+.don-success p{color:var(--gm);font-size:.92rem;line-height:1.65;}
+/* CONTACT */
+.contact-sec{background:var(--off);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2.5rem;align-items:start;}
+.contact-card{background:var(--w);border-radius:var(--rl);padding:2rem;box-shadow:var(--sh);}
+.contact-card h3{margin-bottom:1.25rem;}
+.c-item{display:flex;align-items:flex-start;gap:.9rem;margin-bottom:1.25rem;}
+.c-ico{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;}
+.ci-y{background:var(--yl);}.ci-b{background:var(--bl);}.ci-g{background:var(--gl);}.ci-p{background:var(--pl);}
+.c-detail strong{display:block;font-size:.82rem;font-weight:800;color:var(--gm);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.2rem;}
+.c-detail a,.c-detail p{font-size:.95rem;font-weight:700;color:var(--blk);text-decoration:none;}
+.c-detail a:hover{color:var(--p);}
+/* Social buttons — real Facebook and Instagram with 48px tap targets */
+.soc-links{display:flex;gap:1rem;margin-top:1.5rem;flex-wrap:wrap;}
+.soc-link{display:flex;align-items:center;gap:.6rem;min-height:48px;padding:.55rem 1.1rem;border-radius:var(--r);font-weight:800;font-size:.9rem;text-decoration:none;transition:all var(--t);}
+.soc-link:focus-visible{outline:3px solid var(--y);outline-offset:3px;}
+.soc-fb{background:#1877F2;color:#fff;}
+.soc-fb:hover{background:#1558B0;color:#fff;transform:translateY(-2px);box-shadow:0 6px 20px rgba(24,119,242,.35);}
+.soc-ig{background:linear-gradient(135deg,#833AB4,#FD1D1D,#F77737);color:#fff;}
+.soc-ig:hover{opacity:.88;color:#fff;transform:translateY(-2px);}
+/* FOOTER */
+#site-footer{background:var(--blk);color:rgba(255,255,255,.72);padding:4rem 0 2rem;}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.foot-brand-name{font-family:var(--fh);color:#fff;font-size:1.2rem;margin-bottom:.75rem;display:block;}
+.foot-brand p{font-size:.87rem;line-height:1.7;}
+.foot-motto{font-style:italic;color:rgba(255,255,255,.5);font-size:.82rem;margin-top:1rem;line-height:1.6;}
+.foot-reg{background:rgba(245,197,24,.12);border:1px solid rgba(245,197,24,.3);border-radius:var(--r);padding:.85rem 1rem;margin-top:1rem;font-size:.79rem;}
+.foot-reg strong{color:var(--y);display:block;margin-bottom:.2rem;}
+.foot-col h4{color:#fff;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem;font-family:var(--fb);font-weight:800;}
+.foot-links{list-style:none;}
+.foot-links li{margin-bottom:.55rem;}
+.foot-links a{color:rgba(255,255,255,.62);font-size:.87rem;text-decoration:none;font-weight:600;transition:color var(--t);display:flex;align-items:center;min-height:36px;}
+.foot-links a:hover{color:var(--y);}
+/* Footer social — 48x48px WCAG 2.5.5 */
+.foot-soc{display:flex;gap:.75rem;margin-top:1.25rem;}
+.foot-soc-link{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all var(--t);border:2px solid rgba(255,255,255,.15);}
+.foot-soc-link:hover{border-color:var(--y);transform:translateY(-2px);}
+.foot-soc-link:focus-visible{outline:3px solid var(--y);outline-offset:3px;}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.foot-bottom p{font-size:.8rem;}
+.ssl-badge{display:flex;align-items:center;gap:.4rem;font-size:.77rem;color:#8FE07F;background:rgba(91,173,78,.2);border:1px solid rgba(91,173,78,.35);padding:.35rem .8rem;border-radius:50px;}
+/* Mobile sticky donate bar */
+.mob-sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--p);padding:.75rem 1rem;box-shadow:0 -4px 20px rgba(107,63,160,.3);}
+/* Cookie banner */
+#cookie-bar{position:fixed;bottom:0;left:0;right:0;z-index:1100;background:var(--blk);border-top:3px solid var(--y);padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+#cookie-bar.gone{display:none;}
+#cookie-bar p{font-size:.84rem;color:rgba(255,255,255,.8);flex:1;min-width:200px;}
+#cookie-bar p a{color:var(--y);}
+.ck-acts{display:flex;gap:.75rem;flex-shrink:0;}
+.ck-btn{min-height:48px;padding:.6rem 1.4rem;border-radius:10px;font-family:var(--fb);font-weight:800;font-size:.9rem;cursor:pointer;border:2px solid transparent;transition:all var(--t);}
+.ck-ok{background:var(--y);color:var(--blk);border-color:var(--y);}
+.ck-ok:hover{background:var(--yd);}
+.ck-no{background:transparent;color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.3);}
+.ck-no:hover{border-color:rgba(255,255,255,.7);color:#fff;}
+@keyframes fu{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+.fu{animation:fu .55s ease forwards;}
+.d1{animation-delay:.08s;opacity:0;}.d2{animation-delay:.18s;opacity:0;}
+.d3{animation-delay:.28s;opacity:0;}.d4{animation-delay:.38s;opacity:0;}
+/* RESPONSIVE */
+@media(max-width:960px){
+  .nav-links,.nav-desk{display:none;}
+  .nav-hbg{display:flex;}
+  .hero-inner{grid-template-columns:1fr;gap:2rem;}
+  .hero-visual{display:none;}
+  .camp-inner{grid-template-columns:1fr;gap:2rem;}
+  .prog-pg{grid-template-columns:1fr;}
+  .book-card,.donate-card{position:static;}
+  .donate-grid{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:2rem;}
+  .contact-grid{grid-template-columns:1fr;}
+  .mob-sticky{display:block;}
+  body{padding-bottom:76px;}
+  #cookie-bar{bottom:72px;}
+}
+@media(max-width:600px){
+  .section{padding:3.5rem 0;}
+  .feat-grid,.out-list{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;}
+  .foot-bottom{flex-direction:column;text-align:center;}
+  .ribbon-i{gap:.75rem;}
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Cookie Banner — slim, 48px buttons -->
+<div id="cookie-bar" role="region" aria-label="Cookie consent">
+  <p>We use cookies to improve your experience on csvbelleville.com. <a href="#" onclick="return false;">Learn more</a>.</p>
+  <div class="ck-acts">
+    <button class="ck-btn ck-no" onclick="dismissCookie()" aria-label="Decline optional cookies">Decline</button>
+    <button class="ck-btn ck-ok" onclick="dismissCookie()" aria-label="Accept cookies and close this banner">Accept Cookies</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="site-header" role="banner">
+  <div class="container nav-inner">
+    <!-- Logo: SVG matching real CSV brand — yellow/blue/green blobs + white large hand + purple small hand -->
+    <a href="#" class="nav-logo" onclick="goPage('home');return false;" aria-label="Children's Safety Village — home page">
+      <svg class="nav-logo-svg" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CSV logo showing colourful hands representing child safety">
+        <ellipse cx="19" cy="30" rx="17" ry="16" fill="#F5C518" opacity=".93"/>
+        <ellipse cx="37" cy="25" rx="16" ry="15" fill="#3A86C8" opacity=".88"/>
+        <ellipse cx="28" cy="27" rx="14" ry="13" fill="#5BAD4E" opacity=".85"/>
+        <rect x="24" y="13" width="2.6" height="11" rx="1.3" fill="white"/>
+        <rect x="27" y="12" width="2.6" height="12" rx="1.3" fill="white"/>
+        <rect x="30" y="13" width="2.6" height="11" rx="1.3" fill="white"/>
+        <rect x="33" y="15" width="2.3" height="9.5" rx="1.15" fill="white"/>
+        <rect x="21" y="16" width="2.3" height="9" rx="1.15" fill="white"/>
+        <path d="M21 24 Q21 40 28 41 Q35 40 35 24 Z" fill="white" opacity=".97"/>
+        <rect x="26" y="27" width="1.7" height="7" rx=".85" fill="#6B3FA0"/>
+        <rect x="28" y="26" width="1.7" height="7.5" rx=".85" fill="#6B3FA0"/>
+        <rect x="30" y="27" width="1.7" height="7" rx=".85" fill="#6B3FA0"/>
+        <path d="M25 33 Q25 40 28 41 Q31 40 31 33 Z" fill="#6B3FA0" opacity=".9"/>
+      </svg>
+      <div>
+        <span class="nav-logo-name">Children's Safety Village</span>
+        <span class="nav-logo-sub">Belleville, Ontario</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-links" role="list">
+        <li><a href="#" onclick="goPage('home');return false;" id="nav-home" class="active">Home</a></li>
+        <li><a href="#" onclick="goPage('programs');return false;" id="nav-programs">Programs</a></li>
+        <li><a href="#" onclick="goScroll('campaigns');return false;">Capital Campaign</a></li>
+        <li><a href="#" onclick="goPage('contact');return false;" id="nav-contact">Contact</a></li>
+        <li><a href="#" onclick="return false;">Events</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="btn btn-p nav-desk" onclick="goPage('donate');return false;" aria-label="Donate to Children's Safety Village">Donate Now</a>
+
+    <button class="nav-hbg" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mob-menu" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav id="mob-menu" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="#" onclick="goPage('home');closeNav();return false;">&#127968; Home</a></li>
+      <li><a href="#" onclick="goPage('programs');closeNav();return false;">&#128218; Programs</a></li>
+      <li><a href="#" onclick="goScroll('campaigns');closeNav();return false;">&#127959; Capital Campaign</a></li>
+      <li><a href="#" onclick="goPage('contact');closeNav();return false;">&#128222; Contact Us</a></li>
+      <li><a href="#" onclick="closeNav();return false;">&#127881; Events</a></li>
+      <li><a href="#" onclick="closeNav();return false;">&#129309; Volunteer</a></li>
+    </ul>
+    <div class="mob-ctas">
+      <a href="#" class="btn btn-p btn-fw" onclick="goPage('donate');closeNav();return false;">&#128155; Donate Now</a>
+      <a href="#" class="btn btn-b btn-fw" onclick="goPage('programs');closeNav();return false;">&#128218; Book a Program</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Trust Ribbon -->
+<div class="ribbon" role="complementary" aria-label="Awards and trust badges">
+  <div class="container ribbon-i">
+    <span class="ribbon-item">&#127942; Platinum &mdash; Community Organization 2025</span>
+    <span class="ribbon-item">&#127464;&#127462; Canadian Choice Award 2026</span>
+    <span class="ribbon-item">&#128274; Charity #890280951 RR0001</span>
+    <span class="ribbon-item">&#128274; SSL Secured Donations</span>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ===== HOME PAGE ===== -->
+<div id="page-home" class="page active" role="region" aria-label="Home page">
+
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="hero-blb" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div>
+        <div class="hero-badge fu d1">&#11088; Est. 2004 &middot; Eastern Ontario's First Safety Village</div>
+        <h1 id="hero-h1" class="fu d2">Where Kids Learn to Stay <em>Safe</em> &mdash; By Doing It</h1>
+        <p class="hero-lead fu d3">Canada's premier hands-on safety village for children aged 4&ndash;12. Real streets, working traffic lights, 911 practice calls &mdash; in a miniature community built just for kids.</p>
+        <div class="hero-acts fu d4">
+          <a href="#" class="btn btn-y btn-lg" onclick="goPage('programs');return false;" aria-label="Explore our safety programs">&#128218; Explore Programs</a>
+          <a href="#" class="btn btn-ow btn-lg" onclick="goPage('donate');return false;" aria-label="Donate to our capital campaign">&#128155; Support Our Move</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-grid">
+            <div class="hero-stat hs1"><div class="hs-num y">20K+</div><div class="hs-lab">Children educated annually</div></div>
+            <div class="hero-stat hs2"><div class="hs-num b">21</div><div class="hs-lab">Years in our community</div></div>
+            <div class="hero-stat hs3"><div class="hs-num g">6</div><div class="hs-lab">Core safety programs</div></div>
+            <div class="hero-stat hs4"><div class="hs-num p">100%</div><div class="hs-lab">Free for school groups</div></div>
+          </div>
+          <a href="#" class="hero-cta-card" onclick="goPage('donate');return false;">
+            <span>&#127959; Help us build our new village &mdash; $4M Goal</span><span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capital Campaign Thermometer -->
+  <section class="campaign" id="campaigns" aria-labelledby="camp-h2">
+    <div class="container camp-inner">
+      <div class="camp-text">
+        <span class="eyebrow" style="color:var(--y);">Capital Campaign 2026</span>
+        <h2 id="camp-h2">We're Moving &mdash; And We Need You</h2>
+        <div class="cbar"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+        <p>After 21 years at 129 South John Street, we're relocating to a larger, fully accessible facility to serve even more children across Hastings and Prince Edward Counties. Every dollar brings us closer to opening our new doors in 2027.</p>
+        <div class="camp-acts">
+          <a href="#" class="btn btn-y" onclick="goPage('donate');return false;">&#128155; Donate Today</a>
+          <a href="#" class="btn btn-ow" onclick="return false;">Become a Sponsor</a>
+        </div>
+      </div>
+      <div aria-label="Fundraising thermometer: $2.65 million of $4 million goal raised">
+        <div class="therm-labs"><span>$0</span><span>Current Progress</span><span class="therm-goal">Goal: $4,000,000</span></div>
+        <div class="therm-track" role="progressbar" aria-valuenow="2650000" aria-valuemin="0" aria-valuemax="4000000" aria-label="66 percent of $4 million goal reached">
+          <div class="therm-fill" id="therm-fill"></div>
+        </div>
+        <div class="therm-stats">
+          <div class="therm-stat"><div class="therm-num">$2.65M</div><div class="therm-lab">Raised so far</div></div>
+          <div class="therm-stat"><div class="therm-num">847</div><div class="therm-lab">Donors</div></div>
+          <div class="therm-stat"><div class="therm-num">312</div><div class="therm-lab">Days to go</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="section" aria-labelledby="prog-h2">
+    <div class="container">
+      <div class="tc">
+        <span class="eyebrow">What We Offer</span>
+        <h2 id="prog-h2">Safety Programs That Stick</h2>
+        <div class="cbar cx"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+        <p class="lead" style="margin:0 auto;">Each program is curriculum-aligned, hands-on, and designed for specific age groups. Kids leave knowing exactly what to do when it matters most.</p>
+      </div>
+      <div class="prog-grid">
+        <article class="prog-card pc-y" aria-label="Street Safety program">
+          <div class="pc-bar" aria-hidden="true"></div>
+          <div class="pc-img" aria-hidden="true">&#128678;</div>
+          <div class="pc-body">
+            <span class="pc-badge">Ages 4&ndash;8</span>
+            <h3>Street Safety</h3>
+            <p>Navigate our miniature town as a pedestrian. Learn to read traffic lights, cross streets safely, and identify crossing guard signals in a fully functional environment.</p>
+            <div class="pc-meta"><span>&#9201; 90 min</span><span>&#128101; Max 30</span><span>&#127891; JK&ndash;Grade 2</span><span class="meta-free">&#10003; Free for schools</span></div>
+            <a href="#" class="btn btn-y" onclick="goPage('programs');return false;" aria-label="Book the Street Safety program">Book This Program &rarr;</a>
+          </div>
+        </article>
+        <article class="prog-card pc-b" aria-label="Fire Safety program">
+          <div class="pc-bar" aria-hidden="true"></div>
+          <div class="pc-img" aria-hidden="true">&#128293;</div>
+          <div class="pc-body">
+            <span class="pc-badge">Ages 6&ndash;10</span>
+            <h3>Fire Safety</h3>
+            <p>Partner with real Belleville firefighters to practice evacuation routes, stop-drop-roll, and calling 911 from our working phone booth. Meets Ontario curriculum.</p>
+            <div class="pc-meta"><span>&#9201; 2 hrs</span><span>&#128101; Max 25</span><span>&#127891; Grade 1&ndash;4</span><span class="meta-free">&#10003; Free for schools</span></div>
+            <a href="#" class="btn btn-b" onclick="goPage('programs');return false;" aria-label="Book the Fire Safety program">Book This Program &rarr;</a>
+          </div>
+        </article>
+        <article class="prog-card pc-g" aria-label="Family Drop-In visit">
+          <div class="pc-bar" aria-hidden="true"></div>
+          <div class="pc-img" aria-hidden="true">&#128106;</div>
+          <div class="pc-body">
+            <span class="pc-badge">All Ages</span>
+            <h3>Family Drop-In</h3>
+            <p>Open weekends for families! Bring the kids for a guided self-directed safety adventure. Practice 911 calls, bike the traffic course, and explore the entire village.</p>
+            <div class="pc-meta"><span>&#128197; Sat &amp; Sun</span><span>&#128118; All ages</span><span>&#128176; $5/child</span></div>
+            <a href="#" class="btn btn-g" onclick="goPage('programs');return false;" aria-label="Book a Family Drop-In visit">Book a Visit &rarr;</a>
+          </div>
+        </article>
+        <article class="prog-card pc-p" aria-label="Birthday Party program">
+          <div class="pc-bar" aria-hidden="true"></div>
+          <div class="pc-img" aria-hidden="true">&#127874;</div>
+          <div class="pc-body">
+            <span class="pc-badge">Ages 4&ndash;12</span>
+            <h3>Birthday Parties</h3>
+            <p>Host an unforgettable birthday party at the Village! Kids get a guided tour, safety activities, and a private party room &mdash; the most unique party in Belleville.</p>
+            <div class="pc-meta"><span>&#9201; 2&ndash;3 hrs</span><span>&#128101; Up to 20</span><span>&#128222; Book by phone</span></div>
+            <a href="#" class="btn btn-p" onclick="goPage('programs');return false;" aria-label="Enquire about birthday parties">Enquire Now &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testi-bg" aria-labelledby="testi-h2">
+    <div class="container">
+      <div class="tc">
+        <span class="eyebrow">Testimonials</span>
+        <h2 id="testi-h2">What Educators Are Saying</h2>
+        <div class="cbar cx"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+      </div>
+      <div class="testi-grid">
+        <blockquote class="testi-card t1">
+          <img src="https://csvbelleville.com/wp-content/uploads/2025/05/e2c5c3c5-ea97-4690-b0a9-6231476a4ac0-771x1024-100x100.jpg" alt="Tara Bonfini, Kindergarten teacher, Murray Centennial Public School" class="testi-photo"/>
+          <div aria-label="5 out of 5 stars" style="color:var(--y);font-size:1rem;margin-bottom:1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text">The CSV connects students directly with community partners. Students learned about fire safety from a real firefighter, which increased engagement and gave them the chance to ask questions from an expert. Students love travelling through the safety village &mdash; engaging in safety practices in authentic contexts, all while playing and having fun!</p>
+          <footer><div class="testi-author">Tara Bonfini</div><div class="testi-role">Kindergarten Teacher, Murray Centennial Public School</div></footer>
+        </blockquote>
+        <blockquote class="testi-card t2">
+          <img src="https://csvbelleville.com/wp-content/uploads/2025/05/1efd2977-b162-4359-b532-b98c8311e283-771x1024-100x100.jpg" alt="K. Kovack, Grade 2 Teacher, HPEDSB" class="testi-photo" style="border-color:var(--b);"/>
+          <div aria-label="5 out of 5 stars" style="color:var(--b);font-size:1rem;margin-bottom:1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text">Our Grade 2's loved this interactive program. It's a wonderful combination of in-class learning and engaging hands-on activities through the village. Students loved the questions posed by Officer Jenn and enjoyed learning alongside a community Police Officer. Our community is so fortunate to have access to this incredible opportunity!</p>
+          <footer><div class="testi-author">K. Kovack</div><div class="testi-role">Grade 2 Teacher, HPEDSB</div></footer>
+        </blockquote>
+        <blockquote class="testi-card t3">
+          <img src="https://csvbelleville.com/wp-content/uploads/2025/10/6d86055f-82b3-4bfe-8f64-f41bfbd0eb19-771x1024-100x100.jpg" alt="Lisa Hughes, Grade 5 Teacher, Prince Charles Public School" class="testi-photo" style="border-color:var(--g);"/>
+          <div aria-label="5 out of 5 stars" style="color:var(--g);font-size:1rem;margin-bottom:1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text">The Children's Safety Village is a safe and welcoming place where learning becomes real. Children can practice life-saving skills in an environment designed just for them. CSV shows that safety education doesn't have to be intimidating &mdash; it can be hands-on, memorable, and empowering. It reflects a community that cares about giving children the tools they need.</p>
+          <footer><div class="testi-author">Lisa Hughes</div><div class="testi-role">Grade 5 Teacher, Prince Charles Public School</div></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="section section-sm" aria-labelledby="awards-h2">
+    <div class="container tc">
+      <span class="eyebrow">Recognition</span>
+      <h2 id="awards-h2">Award-Winning Community Organization</h2>
+      <div class="cbar cx"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+      <div class="awards-row">
+        <div class="award"><div class="award-ico ai-y" aria-hidden="true">&#127942;</div><div class="award-ttl">Platinum Award</div><div class="award-org">Community Organization &mdash; Belleville Votes 2025</div></div>
+        <div class="award"><div class="award-ico ai-b" aria-hidden="true">&#129351;</div><div class="award-ttl">Gold Award</div><div class="award-org">Non-Profit &mdash; Belleville Votes 2025</div></div>
+        <div class="award"><div class="award-ico ai-g" aria-hidden="true">&#11088;</div><div class="award-ttl">Top Pick</div><div class="award-org">Organization Services &mdash; Belleville Votes 2025</div></div>
+        <div class="award"><div class="award-ico ai-p" aria-hidden="true">&#127464;&#127462;</div><div class="award-ttl">Canadian Choice Award</div><div class="award-org">Charities Category &mdash; Belleville 2026</div></div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /home -->
+
+<!-- ===== PROGRAMS PAGE ===== -->
+<div id="page-programs" class="page" role="region" aria-label="Programs page">
+  <section class="prog-hero" aria-labelledby="pp-h1">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#" onclick="goPage('home');return false;">Home</a>
+        <span>&rsaquo;</span>
+        <a href="#" onclick="goPage('home');return false;">Programs</a>
+        <span>&rsaquo;</span>
+        <strong aria-current="page">Street Safety</strong>
+      </nav>
+      <span class="eyebrow" style="color:var(--y);">School Programs</span>
+      <h1 id="pp-h1">Street Safety Program</h1>
+      <p class="lead">Our most popular school program &mdash; navigate real traffic lights, practice 911 calls, and learn pedestrian safety skills in our miniature city. Fully aligned with Ontario curriculum for JK&ndash;Grade 4.</p>
+    </div>
+  </section>
+
+  <div class="prog-body">
+    <div class="container prog-pg">
+      <div>
+        <div class="detail-sec" aria-labelledby="inc-h2">
+          <h2 id="inc-h2">What's Included</h2>
+          <div class="cbar"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+          <p>Students take on the role of pedestrians in our fully functioning miniature town &mdash; complete with working traffic signals, railway crossing arms, road signs, and a real phone booth for practising 911 calls. Each session is led by a trained CSV educator alongside a community partner.</p>
+          <div class="feat-grid" aria-label="Program features">
+            <div class="feat-item"><span class="feat-ico" aria-hidden="true">&#128678;</span><div><h4>Working Traffic Lights</h4><p>Practice crossing with real signals and crossing guard cues.</p></div></div>
+            <div class="feat-item"><span class="feat-ico" aria-hidden="true">&#128222;</span><div><h4>911 Practice Calls</h4><p>Use our working phone booth to practice real emergency calls.</p></div></div>
+            <div class="feat-item"><span class="feat-ico" aria-hidden="true">&#128642;</span><div><h4>Railway Crossing Arms</h4><p>Learn safe behaviour at rail crossings with functioning barriers.</p></div></div>
+            <div class="feat-item"><span class="feat-ico" aria-hidden="true">&#128110;</span><div><h4>Community Partners</h4><p>Police, fire, or EMS officers lead interactive discussions.</p></div></div>
+          </div>
+        </div>
+
+        <div class="detail-sec" aria-labelledby="out-h2">
+          <h2 id="out-h2">Learning Outcomes</h2>
+          <div class="cbar"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+          <p>By the end of the program, students will be able to:</p>
+          <ul class="out-list" aria-label="What students will learn">
+            <li>&#10003; Safely cross streets and intersections</li>
+            <li>&#10003; Read and respond to traffic signals</li>
+            <li>&#10003; Call 911 and give key information</li>
+            <li>&#10003; Identify safe adults and safe spaces</li>
+            <li>&#10003; Understand railway crossing rules</li>
+            <li>&#10003; Practise bus safety procedures</li>
+          </ul>
+        </div>
+
+        <div class="detail-sec">
+          <h2>Curriculum Alignment</h2>
+          <div class="cbar"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+          <p>Street Safety is designed in partnership with HPEDSB and meets expectations in Ontario's Health and Physical Education curriculum, as well as Social Studies and Language for Grades JK&ndash;4. All CSV programs are delivered free of charge to school groups and are fully adaptable for students of all abilities.</p>
+        </div>
+      </div>
+
+      <aside aria-label="Booking form">
+        <div class="book-card">
+          <div class="book-head"><h3>Book This Program</h3><p>Reserve your class's spot &mdash; free for all Ontario school groups</p></div>
+          <div class="book-body">
+            <div class="price-disp" aria-label="Cost: Free for school groups"><span class="price-amt">Free</span><span class="price-unit">for school groups</span></div>
+            <form onsubmit="handleBook(event)" novalidate aria-label="Program booking request form">
+              <div class="fld"><label for="t-name" class="flabel">Teacher / Contact Name <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="text" id="t-name" class="finput" placeholder="Ms. Johnson" required autocomplete="name" aria-required="true"/></div>
+              <div class="fld"><label for="s-name" class="flabel">School Name <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="text" id="s-name" class="finput" placeholder="Murray Centennial Public School" required aria-required="true"/></div>
+              <div class="fld"><label for="grade" class="flabel">Grade Level <span aria-hidden="true" style="color:#DC2626">*</span></label>
+                <select id="grade" class="fselect" required aria-required="true">
+                  <option value="" disabled selected>Select grade</option>
+                  <option>Junior Kindergarten</option><option>Senior Kindergarten</option>
+                  <option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option>
+                </select>
+              </div>
+              <div class="fld"><label for="n-stu" class="flabel">Number of Students <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="number" id="n-stu" class="finput" placeholder="25" min="1" max="30" required aria-required="true" aria-describedby="max-note"/><span id="max-note" class="fhint">Maximum 30 students per session</span></div>
+              <div class="fld"><label for="p-date" class="flabel">Preferred Date <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="date" id="p-date" class="finput" required aria-required="true"/></div>
+              <div class="fld"><label for="b-email" class="flabel">Email Address <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="email" id="b-email" class="finput" placeholder="teacher@school.edu" required autocomplete="email" aria-required="true"/></div>
+              <button type="submit" class="btn btn-p btn-fw btn-lg" aria-label="Submit booking request for Street Safety program">&#128197; Request Booking</button>
+            </form>
+            <div class="tbadges">
+              <span class="tbadge tb-g">&#10003; Free for schools</span>
+              <span class="tbadge tb-b">&#10003; HPEDSB Approved</span>
+              <span class="tbadge tb-p">&#10003; Fully Accessible</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="book-success" style="display:none;" role="alert" aria-live="polite">
+    <div class="container" style="padding:3rem 1.5rem;text-align:center;">
+      <div style="max-width:520px;margin:0 auto;background:#fff;border-radius:22px;padding:3rem;box-shadow:0 12px 44px rgba(58,134,200,.16);">
+        <div style="width:80px;height:80px;background:#E8F5E8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin:0 auto 1.5rem;" aria-hidden="true">&#9989;</div>
+        <h2 style="color:#449038;margin-bottom:.75rem;">Booking Request Received!</h2>
+        <p style="color:#6B7490;line-height:1.7;">Thank you! Rachelle Baldock (Executive Director) will confirm your booking within 2 business days. Check your email for a confirmation.</p>
+        <p style="margin-top:.75rem;font-size:.9rem;color:#6B7490;">Questions? Call <a href="tel:6132431059">(613) 243-1059</a> or email <a href="mailto:info@csvbelleville.com">info@csvbelleville.com</a></p>
+        <a href="#" class="btn btn-y" style="margin-top:1.5rem;display:inline-flex;" onclick="goPage('home');return false;">Return to Home</a>
+      </div>
+    </div>
+  </div>
+</div><!-- /programs -->
+
+<!-- ===== DONATE PAGE ===== -->
+<div id="page-donate" class="page" role="region" aria-label="Donation page">
+  <div class="donate-pg">
+    <div class="container donate-grid">
+      <div>
+        <span class="eyebrow">Capital Campaign 2026</span>
+        <h1>Help Us Build a Safer Future</h1>
+        <div class="cbar"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+        <p class="lead">We're raising $4 million to relocate to a larger, fully accessible facility &mdash; enabling us to serve 2&times; more children across Hastings and Prince Edward Counties starting in 2027.</p>
+        <div class="impact-cards" aria-label="Select a donation amount to see its impact">
+          <div class="impact-card sel" onclick="selImpact(this,25)" role="button" tabindex="0" aria-pressed="true" aria-label="Donate $25 — supplies materials for one child">
+            <div class="ic-amt">$25</div><div class="ic-desc">Supplies safety materials for one child's visit</div>
+          </div>
+          <div class="impact-card" onclick="selImpact(this,100)" role="button" tabindex="0" aria-pressed="false" aria-label="Donate $100 — sponsors a class session">
+            <div class="ic-amt">$100</div><div class="ic-desc">Sponsors one school class program session</div>
+          </div>
+          <div class="impact-card" onclick="selImpact(this,250)" role="button" tabindex="0" aria-pressed="false" aria-label="Donate $250 — funds a full day of programming">
+            <div class="ic-amt">$250</div><div class="ic-desc">Funds a full day of programming for 60 kids</div>
+          </div>
+          <div class="impact-card" onclick="selImpact(this,1000)" role="button" tabindex="0" aria-pressed="false" aria-label="Donate $1000 — Village Builder recognition">
+            <div class="ic-amt">$1,000</div><div class="ic-desc">Village Builder &mdash; name on our donor wall</div>
+          </div>
+        </div>
+        <div style="background:var(--off);border-radius:22px;padding:2rem;margin-top:1rem;">
+          <h2 style="font-size:1.35rem;margin-bottom:1rem;">What We're Building</h2>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div style="display:flex;gap:.75rem;align-items:flex-start;"><span style="font-size:1.7rem;" aria-hidden="true">&#9855;</span><div><h4 style="margin-bottom:.2rem;font-family:var(--fb);">Full Accessibility</h4><p style="font-size:.84rem;color:var(--gm);margin:0;">Wheelchair ramps, sensory rooms, adaptive programming</p></div></div>
+            <div style="display:flex;gap:.75rem;align-items:flex-start;"><span style="font-size:1.7rem;" aria-hidden="true">&#127968;</span><div><h4 style="margin-bottom:.2rem;font-family:var(--fb);">Bigger Village</h4><p style="font-size:.84rem;color:var(--gm);margin:0;">2&times; the space &mdash; more streets and simultaneous programs</p></div></div>
+            <div style="display:flex;gap:.75rem;align-items:flex-start;"><span style="font-size:1.7rem;" aria-hidden="true">&#128218;</span><div><h4 style="margin-bottom:.2rem;font-family:var(--fb);">New Programs</h4><p style="font-size:.84rem;color:var(--gm);margin:0;">Digital safety, online risk, and secondary school programs</p></div></div>
+            <div style="display:flex;gap:.75rem;align-items:flex-start;"><span style="font-size:1.7rem;" aria-hidden="true">&#128200;</span><div><h4 style="margin-bottom:.2rem;font-family:var(--fb);">40,000 Kids/Year</h4><p style="font-size:.84rem;color:var(--gm);margin:0;">Double capacity &mdash; from 20,000 to 40,000 children annually</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside aria-label="Donation form">
+        <div class="donate-card">
+          <div class="donate-head"><h2>Make Your Donation</h2><p>Secure, tax-deductible. Receipt emailed instantly.</p></div>
+          <div class="donate-body">
+            <div id="don-form-wrap">
+              <fieldset style="border:none;padding:0;margin:0 0 .75rem;">
+                <legend style="font-size:.84rem;font-weight:800;color:var(--blk);margin-bottom:.6rem;display:block;">Choose Amount</legend>
+                <div class="amt-sel" role="group" aria-label="Preset donation amounts">
+                  <button type="button" class="amt-btn" onclick="setAmt(25,this)" aria-pressed="false">$25</button>
+                  <button type="button" class="amt-btn" onclick="setAmt(50,this)" aria-pressed="false">$50</button>
+                  <button type="button" class="amt-btn sel" onclick="setAmt(100,this)" aria-pressed="true">$100</button>
+                  <button type="button" class="amt-btn" onclick="setAmt(250,this)" aria-pressed="false">$250</button>
+                  <button type="button" class="amt-btn" onclick="setAmt(500,this)" aria-pressed="false">$500</button>
+                  <button type="button" class="amt-btn" onclick="setAmt(1000,this)" aria-pressed="false">$1,000</button>
+                </div>
+              </fieldset>
+              <div class="camt-wrap" role="group" aria-label="Or enter a custom amount">
+                <span class="camt-pfx" aria-hidden="true">$</span>
+                <input type="number" id="c-amt" class="camt-inp" placeholder="Other amount" min="1" aria-label="Custom donation amount in dollars" oninput="updateCamt(this)"/>
+              </div>
+              <form onsubmit="handleDon(event)" novalidate aria-label="Donor information and payment form">
+                <div class="fld"><label for="dn-name" class="flabel">Full Name <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="text" id="dn-name" class="finput" placeholder="Jane Smith" required autocomplete="name" aria-required="true"/></div>
+                <div class="fld"><label for="dn-email" class="flabel">Email Address <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="email" id="dn-email" class="finput" placeholder="jane@email.com" required autocomplete="email" aria-required="true"/></div>
+                <div class="fld"><label for="card-n" class="flabel">Card Number <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="text" id="card-n" class="finput" placeholder="1234 5678 9012 3456" maxlength="19" required autocomplete="cc-number" aria-required="true" oninput="fmtCard(this)"/></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;">
+                  <div class="fld"><label for="card-ex" class="flabel">Expiry <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="text" id="card-ex" class="finput" placeholder="MM/YY" maxlength="5" required autocomplete="cc-exp" aria-required="true" oninput="fmtExp(this)"/></div>
+                  <div class="fld"><label for="card-cv" class="flabel">CVC <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="text" id="card-cv" class="finput" placeholder="123" maxlength="3" required autocomplete="cc-csc" aria-required="true"/></div>
+                </div>
+                <button type="submit" id="don-btn" class="btn btn-p btn-fw btn-lg" aria-label="Complete donation of $100">
+                  &#128155; Donate <span id="don-disp">$100</span> Securely
+                </button>
+              </form>
+              <p class="secure-note" aria-label="Secure encrypted donation">&#128274; 256-bit SSL encryption &middot; Tax receipt emailed instantly</p>
+              <div class="charity-box" aria-label="Registered charity information">
+                <strong>Children's Safety Village Belleville</strong>
+                Registered Charity #890280951 RR0001<br>All donations are tax-deductible in Canada
+              </div>
+            </div>
+            <div class="don-success" id="don-success" aria-live="polite">
+              <div class="don-succ-ico" aria-hidden="true">&#128155;</div>
+              <h3>Thank You So Much!</h3>
+              <p>Your generous donation will help us build a safer future for children across Hastings and Prince Edward Counties. Your official tax receipt has been emailed to you.</p>
+              <p id="don-conf" style="margin-top:.75rem;font-weight:800;color:var(--blk);"></p>
+              <a href="#" class="btn btn-y" style="margin-top:1.5rem;display:inline-flex;" onclick="goPage('home');return false;">Return to Home</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div><!-- /donate -->
+
+<!-- ===== CONTACT PAGE ===== -->
+<div id="page-contact" class="page" role="region" aria-label="Contact page">
+  <section class="section contact-sec" aria-labelledby="con-h1">
+    <div class="container">
+      <span class="eyebrow">Get In Touch</span>
+      <h1 id="con-h1" style="font-size:clamp(1.8rem,4vw,2.6rem);">Contact Us</h1>
+      <div class="cbar"><span class="cy"></span><span class="cg"></span><span class="cb"></span><span class="cp"></span></div>
+      <p class="lead">We'd love to hear from you. Reach us by phone, email, or on social media &mdash; or come visit us at 129 South John Street, Belleville!</p>
+      <div class="contact-grid">
+        <div class="contact-card" aria-label="Contact details">
+          <h3>Contact Information</h3>
+          <div class="c-item">
+            <div class="c-ico ci-y" aria-hidden="true">&#128205;</div>
+            <div class="c-detail"><strong>Address</strong><p>129 South John Street,<br>Belleville, ON K8N 3E5</p></div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico ci-b" aria-hidden="true">&#128222;</div>
+            <div class="c-detail"><strong>Phone</strong><a href="tel:6132431059">(613) 243-1059</a></div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico ci-g" aria-hidden="true">&#9993;</div>
+            <div class="c-detail"><strong>Email</strong><a href="mailto:info@csvbelleville.com">info@csvbelleville.com</a></div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico ci-p" aria-hidden="true">&#128100;</div>
+            <div class="c-detail"><strong>Executive Director</strong><p>Rachelle Baldock</p></div>
+          </div>
+          <h4 style="margin-top:1.5rem;margin-bottom:.75rem;font-family:var(--fb);font-size:.95rem;color:var(--blk);">Follow Us on Social Media</h4>
+          <div class="soc-links">
+            <a href="https://www.facebook.com/csvbelleville" target="_blank" rel="noopener noreferrer" class="soc-link soc-fb" aria-label="Follow Children's Safety Village on Facebook (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/csvbelleville" target="_blank" rel="noopener noreferrer" class="soc-link soc-ig" aria-label="Follow Children's Safety Village on Instagram (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card" aria-label="Contact form">
+          <h3>Send Us a Message</h3>
+          <form onsubmit="handleContact(event)" novalidate aria-label="Contact form">
+            <div class="fld"><label for="cn-name" class="flabel">Your Name <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="text" id="cn-name" class="finput" placeholder="Jane Smith" required autocomplete="name" aria-required="true"/></div>
+            <div class="fld"><label for="cn-email" class="flabel">Email <span aria-hidden="true" style="color:#DC2626">*</span></label><input type="email" id="cn-email" class="finput" placeholder="jane@email.com" required autocomplete="email" aria-required="true"/></div>
+            <div class="fld"><label for="cn-subj" class="flabel">Subject <span aria-hidden="true" style="color:#DC2626">*</span></label>
+              <select id="cn-subj" class="fselect" required aria-required="true">
+                <option value="" disabled selected>Select a subject</option>
+                <option>Book a School Program</option><option>Birthday Party Enquiry</option>
+                <option>Sponsorship / Donation</option><option>Volunteer Opportunities</option><option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="fld"><label for="cn-msg" class="flabel">Message <span aria-hidden="true" style="color:#DC2626">*</span></label><textarea id="cn-msg" class="finput" rows="5" placeholder="Tell us how we can help..." required aria-required="true" style="resize:vertical;min-height:120px;"></textarea></div>
+            <button type="submit" class="btn btn-p btn-fw" aria-label="Send your message">&#9993; Send Message</button>
+            <div id="cn-ok" style="display:none;margin-top:1rem;background:var(--gl);color:var(--gd);padding:1rem;border-radius:14px;font-weight:700;text-align:center;" role="alert" aria-live="polite">&#9989; Message sent! We'll reply within 2 business days.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /contact -->
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="foot-brand-name">Children's Safety Village Belleville</span>
+        <p>An interactive educational organization delivering relevant safety programs to youth of all ages and abilities &mdash; empowering them to make informed decisions and play an active role in community safety.</p>
+        <p class="foot-motto">"Tell me and I will forget. Show me and I may remember. Involve me and I will understand."</p>
+        <div class="foot-reg" aria-label="Charity registration information">
+          <strong>Registered Charity #890280951 RR0001</strong>
+          129 South John Street, Belleville, ON K8N 3E5
+        </div>
+        <!-- Social icons — 48x48px WCAG tap targets -->
+        <div class="foot-soc" aria-label="Social media links">
+          <a href="https://www.facebook.com/csvbelleville" target="_blank" rel="noopener noreferrer" class="foot-soc-link" aria-label="Facebook page: csvbelleville (opens in new tab)" title="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/csvbelleville" target="_blank" rel="noopener noreferrer" class="foot-soc-link" aria-label="Instagram: @csvbelleville (opens in new tab)" title="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Programs footer navigation">
+        <h4>Programs</h4>
+        <ul class="foot-links" role="list">
+          <li><a href="#" onclick="goPage('programs');return false;">Street Safety</a></li>
+          <li><a href="#" onclick="goPage('programs');return false;">Fire Safety</a></li>
+          <li><a href="#" onclick="goPage('programs');return false;">911 Training</a></li>
+          <li><a href="#" onclick="goPage('programs');return false;">Family Drop-In</a></li>
+          <li><a href="#" onclick="goPage('programs');return false;">Birthday Parties</a></li>
+          <li><a href="#" onclick="return false;">Kids Got Talent</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Get involved navigation">
+        <h4>Get Involved</h4>
+        <ul class="foot-links" role="list">
+          <li><a href="#" onclick="goPage('donate');return false;">Donate Now</a></li>
+          <li><a href="#" onclick="goScroll('campaigns');return false;">Capital Campaign</a></li>
+          <li><a href="#" onclick="return false;">Become a Sponsor</a></li>
+          <li><a href="#" onclick="return false;">Volunteer</a></li>
+          <li><a href="#" onclick="return false;">Corporate Partners</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="About navigation">
+        <h4>About</h4>
+        <ul class="foot-links" role="list">
+          <li><a href="#" onclick="return false;">About CSV</a></li>
+          <li><a href="#" onclick="return false;">Staff &amp; Board</a></li>
+          <li><a href="#" onclick="return false;">News &amp; Events</a></li>
+          <li><a href="#" onclick="goPage('contact');return false;">Contact Us</a></li>
+          <li><a href="#" onclick="return false;">Accessibility</a></li>
+          <li><a href="tel:6132431059">&#128222; (613) 243-1059</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="foot-bottom">
+      <p>&copy; 2026 Children's Safety Village Belleville. Registered Charity #890280951 RR0001. All Rights Reserved.</p>
+      <div class="ssl-badge" aria-label="SSL secured website">&#128274; SSL Secured</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile sticky donate -->
+<div class="mob-sticky" aria-label="Mobile donate bar">
+  <a href="#" class="btn btn-y btn-fw" onclick="goPage('donate');return false;" aria-label="Donate to Children's Safety Village Capital Campaign" style="border-radius:12px;font-size:1rem;">
+    &#128155; Donate Now &mdash; Support Our Capital Campaign
+  </a>
+</div>
+
+<div id="pg-ann" role="status" aria-live="polite" class="sr-only"></div>
+
+<script>
+/* SPA ROUTING */
+function goPage(name) {
+  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); p.setAttribute('aria-hidden','true'); });
+  var t = document.getElementById('page-' + name);
+  if (t) { t.classList.add('active'); t.removeAttribute('aria-hidden'); }
+  ['home','programs','donate','contact'].forEach(function(id) {
+    var el = document.getElementById('nav-' + id); if (el) el.classList.remove('active');
+  });
+  var ael = document.getElementById('nav-' + name); if (ael) ael.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  var titles = { home: "Children's Safety Village Belleville | Safety Education", programs: "Street Safety | Children's Safety Village", donate: "Donate | Capital Campaign | CSV Belleville", contact: "Contact Us | Children's Safety Village Belleville" };
+  document.title = titles[name] || titles.home;
+  var ann = document.getElementById('pg-ann'); if (ann) ann.textContent = 'Page: ' + (titles[name]||'').split('|')[0].trim();
+  if (name === 'home') setTimeout(animTherm, 500);
+  if (name === 'programs') {
+    var pg = document.querySelector('.prog-pg'); var bs = document.getElementById('book-success');
+    if (pg) pg.style.display = ''; if (bs) bs.style.display = 'none';
+  }
+  if (name === 'donate') {
+    var fw = document.getElementById('don-form-wrap'); var ds = document.getElementById('don-success'); var db = document.getElementById('don-btn');
+    if (fw) fw.style.display = ''; if (ds) ds.classList.remove('show');
+    if (db) { db.disabled = false; db.innerHTML = '&#128155; Donate <span id="don-disp">$100</span> Securely'; }
+    donAmt = 100;
+  }
+}
+function goScroll(id) { goPage('home'); setTimeout(function() { var el = document.getElementById(id); if (el) el.scrollIntoView({ behavior:'smooth', block:'start' }); }, 150); }
+
+/* NAV TOGGLE */
+function toggleNav(btn) {
+  var m = document.getElementById('mob-menu'); var open = m.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open.toString());
+  btn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+}
+function closeNav() {
+  var m = document.getElementById('mob-menu'); var btn = document.querySelector('.nav-hbg');
+  m.classList.remove('open'); if (btn) { btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Open navigation menu'); }
+}
+
+/* COOKIE */
+function dismissCookie() { document.getElementById('cookie-bar').classList.add('gone'); }
+setTimeout(function() { var b = document.getElementById('cookie-bar'); if (b && !b.classList.contains('gone')) b.classList.add('gone'); }, 15000);
+
+/* THERMOMETER */
+function animTherm() { var f = document.getElementById('therm-fill'); if (f) f.style.width = '66.25%'; }
+setTimeout(animTherm, 900);
+
+/* BOOKING FORM */
+function handleBook(e) {
+  e.preventDefault(); var valid = true;
+  e.target.querySelectorAll('[required]').forEach(function(inp) {
+    if (!inp.value.trim()) { inp.style.borderColor='#DC2626'; inp.setAttribute('aria-invalid','true'); valid=false; }
+    else { inp.style.borderColor=''; inp.setAttribute('aria-invalid','false'); }
+  });
+  if (!valid) { var f = e.target.querySelector('[aria-invalid="true"]'); if (f) f.focus(); return; }
+  var pg = document.querySelector('.prog-pg'); var bs = document.getElementById('book-success');
+  if (pg) pg.style.display='none'; if (bs) { bs.style.display='block'; bs.focus(); }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* DONATION */
+var donAmt = 100;
+function setAmt(amount, btn) {
+  donAmt = amount;
+  document.querySelectorAll('.amt-btn').forEach(function(b) { b.classList.remove('sel'); b.setAttribute('aria-pressed','false'); });
+  btn.classList.add('sel'); btn.setAttribute('aria-pressed','true');
+  var d = document.getElementById('don-disp'); if (d) d.textContent = '$' + amount.toLocaleString();
+  var c = document.getElementById('c-amt'); if (c) c.value = '';
+}
+function updateCamt(inp) {
+  if (inp.value) {
+    donAmt = parseFloat(inp.value) || 0;
+    document.querySelectorAll('.amt-btn').forEach(function(b) { b.classList.remove('sel'); b.setAttribute('aria-pressed','false'); });
+    var d = document.getElementById('don-disp'); if (d) d.textContent = '$' + donAmt.toLocaleString();
+  }
+}
+function selImpact(card, amount) {
+  document.querySelectorAll('.impact-card').forEach(function(c) { c.classList.remove('sel'); c.setAttribute('aria-pressed','false'); });
+  card.classList.add('sel'); card.setAttribute('aria-pressed','true');
+  donAmt = amount;
+  var d = document.getElementById('don-disp'); if (d) d.textContent = '$' + amount.toLocaleString();
+}
+function handleDon(e) {
+  e.preventDefault(); var valid = true;
+  e.target.querySelectorAll('[required]').forEach(function(inp) {
+    if (!inp.value.trim()) { inp.style.borderColor='#DC2626'; inp.setAttribute('aria-invalid','true'); valid=false; }
+    else { inp.style.borderColor=''; inp.setAttribute('aria-invalid','false'); }
+  });
+  if (!valid) { var f = e.target.querySelector('[aria-invalid="true"]'); if (f) f.focus(); return; }
+  var btn = document.getElementById('don-btn'); if (btn) { btn.textContent='Processing...'; btn.disabled=true; }
+  setTimeout(function() {
+    var nm = document.getElementById('dn-name') ? document.getElementById('dn-name').value : '';
+    var fw = document.getElementById('don-form-wrap'); var ds = document.getElementById('don-success'); var dc = document.getElementById('don-conf');
+    if (fw) fw.style.display='none'; if (ds) { ds.classList.add('show'); ds.focus(); }
+    if (dc) dc.textContent = 'Donation: $' + donAmt.toLocaleString() + ' — Thank you, ' + nm + '!';
+  }, 1600);
+}
+
+/* CONTACT FORM */
+function handleContact(e) {
+  e.preventDefault(); var valid = true;
+  e.target.querySelectorAll('[required]').forEach(function(inp) {
+    if (!inp.value.trim()) { inp.style.borderColor='#DC2626'; inp.setAttribute('aria-invalid','true'); valid=false; }
+    else { inp.style.borderColor=''; inp.setAttribute('aria-invalid','false'); }
+  });
+  if (!valid) { var f = e.target.querySelector('[aria-invalid="true"]'); if (f) f.focus(); return; }
+  var s = document.getElementById('cn-ok'); if (s) s.style.display='block'; e.target.reset();
+}
+
+/* CARD FORMATTING */
+function fmtCard(inp) { var v = inp.value.replace(/\D/g,'').substring(0,16); inp.value = v.replace(/(\d{4})(?=\d)/g,'$1 '); }
+function fmtExp(inp) { var v = inp.value.replace(/\D/g,'').substring(0,4); if (v.length>=2) v=v.substring(0,2)+'/'+v.substring(2); inp.value = v; }
+
+/* INIT */
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.impact-card').forEach(function(card) {
+    card.addEventListener('keydown', function(e) { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); card.click(); } });
+  });
+  var obs = new IntersectionObserver(function(entries) { entries.forEach(function(en) { if (en.isIntersecting) animTherm(); }); }, { threshold:0.3 });
+  var fill = document.getElementById('therm-fill'); if (fill) obs.observe(fill);
+});
+</script>
+</body>
+</html>
